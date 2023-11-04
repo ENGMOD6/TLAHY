@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Game</title>
+    <style>
+        #gameArea {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000;
+        }
+
+        #gameImage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: top 0.3s, left 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameArea" onclick="moveImage(event)">
+        <img id="gameImage" src="image.jpg" alt="Game Image" width="50" height="50">
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
